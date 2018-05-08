@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name=description content="A portfolio project">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+        <title>Anna Januszewska</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="./images/logo.jpg" alt="logo">
+            </div>
+            <div id="menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#name">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li id="no-border"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="name">
+            <h2>Anna Januszewska</h2>
+            <h3>Front-End Web Developer</h3>
+        </section>
+        <div id="main-container">
+        <main> 
+            <div id="portfolio">
+                <h1>Featured Projects</h1>
+                <div id="first"><a href="#" target="_blank"><img src="./images/portfolio/thumbnails/1.jpg" alt="Picture of project 1"></a>
+                    <h3>Project</h3>
+                    <p>Lorem ipsum dolor sit amet, everti qualisque vel ex, veri indoctum euripidis cu vim.</p>
+                </div>
+                <div id="second"><a href="#" target="_blank"><img src="./images/portfolio/thumbnails/2.jpg" alt="Picture of project 2"></a>
+                    <h3>Project</h3>
+                    <p>Lorem ipsum dolor sit amet, everti qualisque vel ex, veri indoctum euripidis cu vim.</p>
+                </div>
+                <div id="third"><a href="#" target="_blank"><img src="./images/portfolio/thumbnails/3.jpg" alt="Picture of project 3"></a>
+                    <h3>Project</h3>
+                    <p>Lorem ipsum dolor sit amet, everti qualisque vel ex, veri indoctum euripidis cu vim.</p>
+                </div>
+                <div id="fourth"><a href="#" target="_blank"><img src="./images/portfolio/thumbnails/4.jpg" alt="Picture of project 4"></a>
+                    <h3>Project</h3>
+                    <p>Lorem ipsum dolor sit amet, everti qualisque vel ex, veri indoctum euripidis cu vim.</p>
+                </div>
+                <div id="fifth"><a href="#" target="_blank"><img src="./images/portfolio/thumbnails/5.jpg" alt="Picture of project 5"></a>
+                    <h3>Project</h3>
+                    <p>Lorem ipsum dolor sit amet, everti qualisque vel ex, veri indoctum euripidis cu vim.</p>
+                </div>
+                <div id="sixth"><a href="#" target="_blank"><img src="./images/portfolio/thumbnails/6.jpg" alt="Picture of project 6"></a>
+                    <h3>Project</h3>
+                    <p>Lorem ipsum dolor sit amet, everti qualisque vel ex, veri indoctum euripidis cu vim.</p>
+                </div>
+            </div>
+        </main>
+        </div>
+        <footer>
+            <div id="footer-container">    
+                <div id="contact">
+                    <h1>Around the Web</h1>
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>     
+
+                <div id="footer-above">
+                    <h1>About this page</h1>
+                    <p>Made with <i class="fas fa-music"></i>, <i class="fas fa-coffee"></i>, and <i class="fas fa-heart"></i> <br>by <a href="#">Anna Januszewska</a>.</p>
+                </div>
+            </div>
+            
+            <div id="footer-below" class="text-center">
+                <p>Anna Januszewska &copy; 2018. All Rights Reserved</p>
+            </div>
+        </footer>
+        <script>
+                /*
+                 * Open the drawer when the menu ison is clicked.
+                 */
+                var menu = document.querySelector('#menu');
+                var main = document.querySelector('main');
+                var drawer = document.querySelector('nav');
+          
+                menu.addEventListener('click', function(e) {
+                  drawer.classList.toggle('open');
+                  e.stopPropagation();
+                });
+                main.addEventListener('click', function() {
+                  drawer.classList.remove('open');
+                });
+          
+              </script>
+    </body>
+</html>
